@@ -1,3 +1,13 @@
+Laravelのインストール
+http://qiita.com/you-me/items/8794ed5344e1540e93d2
+(composerを使用)
+
+Mysqlのインストール
+http://qiita.com/hkusu/items/cda3e8461e7a46ecf25d
+(homebrewを使用)
+学習サイト
+http://site.oganity.pw/116/
+
 フォルダの役割
 
 app
@@ -17,6 +27,23 @@ database
 
   migrations
   データベースのバージョン管理をするphpファイルを入れる
+  php artisan make:migration (ファイル名) 　で新規のmigrationファイルが作成できる
+  さらに、例えば　--create=posts とすれば、postsテーブルが新規に作成される
+    
+    migrationファイル
+    実行するには、
+    php artisan migrate と書く
+    
+      up関数
+      やりたい処理を書く
+      
+        post処理
+        $table->increments('変数'),$table->string('変数'),$table->text('変数') という形式で、変数名とその方を決定
+        timestampsで、作成日時と更新日時を管理
+        
+    
+      down関数
+      up関数の処理を、巻き戻すための処理
   
 public
 ブラウザからアクセスした際に見えるフォルダ
