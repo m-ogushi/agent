@@ -1,0 +1,29 @@
+フォルダの役割
+
+app
+applicationに関するファイル
+Modelはここに作る
+
+  Http
+  リクエストを処理
+  
+      Controllers
+      コントローラーを入れていく
+      
+      routes.php
+      ルーティングを管理
+      
+database
+
+  migrations
+  データベースのバージョン管理をするphpファイルを入れる
+  
+public
+ブラウザからアクセスした際に見えるフォルダ
+css,js,画像などはここに入れる
+
+resource
+
+  view
+  画面のテンプレを入れる
+  
